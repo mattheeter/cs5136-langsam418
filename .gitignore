@@ -364,3 +364,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/unity,dotnetcore,visualstudiocode,rider,jetbrains,macos,windows,android
+
+# Custom
+.utmp/
+*.meta
