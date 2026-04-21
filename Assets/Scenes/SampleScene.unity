@@ -354,9 +354,9 @@ MonoBehaviour:
   webViewImage: {fileID: 1537563837}
   pointerEventSource: {fileID: 1537563839}
   textureWidth: 1920
-  intervalMSec: 100
+  intervalMSec: 10
   defaultUrl: https://miro.com/online-whiteboard/tool/
-  normalizedTouchSlop: {x: 10, y: 10}
+  normalizedTouchSlop: {x: 0.05, y: 0.05}
   defaultMipChain: 1
   defaultFilterMode: 2
   defaultAnisoLebel: 8
@@ -1457,7 +1457,7 @@ Canvas:
   m_RenderMode: 2
   m_Camera: {fileID: 1914645922}
   m_PlaneDistance: 0
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 0
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -1919,6 +1919,22 @@ PrefabInstance:
     - target: {fileID: 7114770129336771053, guid: df64bf5efda75be4db0c812f9277d678, type: 3}
       propertyPath: m_Name
       value: FlatUnityCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770129336771054, guid: df64bf5efda75be4db0c812f9277d678, type: 3}
+      propertyPath: _exitHoverNormal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770129336771054, guid: df64bf5efda75be4db0c812f9277d678, type: 3}
+      propertyPath: _enterHoverNormal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770129336771054, guid: df64bf5efda75be4db0c812f9277d678, type: 3}
+      propertyPath: _cancelSelectNormal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114770129336771054, guid: df64bf5efda75be4db0c812f9277d678, type: 3}
+      propertyPath: _cancelSelectTangent
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7114770129336771054, guid: df64bf5efda75be4db0c812f9277d678, type: 3}
       propertyPath: _recoilAssist.Enabled
