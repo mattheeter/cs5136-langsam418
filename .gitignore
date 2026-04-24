@@ -364,7 +364,11 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/unity,dotnetcore,visualstudiocode,rider,jetbrains,macos,windows,android
+<<<<<<< Updated upstream
 
 # Custom
 .utmp/
 *.meta
+=======
+.utmp/
+>>>>>>> Stashed changes
