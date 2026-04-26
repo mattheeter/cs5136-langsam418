@@ -345,7 +345,7 @@
                 {
                     "name": "",
                     "id": "1dc224cb-78dd-466c-9e9d-08b5b6b2663c",
-                    "path": "<QuestTouchPlusController>{LeftHand}/primaryButton",
+                    "path": "<QuestTouchPlusController>{LeftHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
@@ -444,7 +444,7 @@
                 {
                     "name": "",
                     "id": "8761a76a-16b8-4c0f-b121-35e980829be2",
-                    "path": "<QuestTouchPlusController>{LeftHand}/secondaryButton",
+                    "path": "<QuestTouchPlusController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
