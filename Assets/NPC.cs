@@ -1,31 +1,36 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.InputSystem;
 
 public class NPC : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    private bool somethingNearby = false;
+    public TextMeshProUGUI dialogueText; // Reference to the TMP UI text
+    public string customText;
+    private bool playerNearby = false;
 
     void Update()
     {
-        if (somethingNearby && Input.GetMouseButtonDown(0))
+        if (playerNearby)
         {
             dialoguePanel.SetActive(true);
+            dialogueText.text = customText;
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer != LayerMask.NameToLayer("Default"))
+        if (other.CompareTag("Player"))
         {
-            somethingNearby = true;
+            playerNearby = true;
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer != LayerMask.NameToLayer("Default"))
+        if (other.CompareTag("Player"))
         {
-            somethingNearby = false;
+            playerNearby = false;
             dialoguePanel.SetActive(false);
         }
     }
