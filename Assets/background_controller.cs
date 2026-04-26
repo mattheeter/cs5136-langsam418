@@ -34,9 +34,6 @@ public class background_controller : MonoBehaviour
     }
 
     void updateBackground(int newIndex) {
-      Debug.Log(index);
-      Debug.Log(newIndex);
-
       int oldIndex = index;
       index = newIndex;
 
