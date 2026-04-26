@@ -150,6 +150,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1502590656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &53066914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2139185334, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+  m_PrefabInstance: {fileID: 1781976670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &53066919
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53066914}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &102116928
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,14 +376,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 123360666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109f367c8dc824054a641869616aa5a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ce24474b2e9f48ff89bec14e937baba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WebView.WebViewManager
   webViewImage: {fileID: 1537563837}
   pointerEventSource: {fileID: 1537563839}
   textureWidth: 1920
-  intervalMSec: 10
-  defaultUrl: https://miro.com/online-whiteboard/tool/
+  intervalMSec: 100
+  defaultUrl: https://www.uc.edu/about/registrar/calendars/spring-2026/exam-schedule.html
   normalizedTouchSlop: {x: 0.05, y: 0.05}
   defaultMipChain: 1
   defaultFilterMode: 2
@@ -1298,7 +1326,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1537563835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e650ad4d0ea3f458b9a6c85da3b0b90a, type: 3}
+  m_Script: {fileID: 11500000, guid: 36b4bc79370c647719ea7fd97a30c91b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WebView.PointerEventSource
   showLogs: 0
@@ -2246,6 +2274,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4148778239110795873, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1781976673}
+    - targetCorrespondingSourceObject: {fileID: 2139185334, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 53066919}
   m_SourcePrefab: {fileID: 100100000, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
 --- !u!4 &1781976671 stripped
 Transform:
