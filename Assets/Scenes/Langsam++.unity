@@ -166,9 +166,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 340559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b4bc79370c647719ea7fd97a30c91b, type: 3}
+  m_Script: {fileID: 11500000, guid: 36d960941dccb434bae474b5acca3933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WebView.PointerEventSource
+  showLogs: 0
 --- !u!114 &340562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5380,7 +5381,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 820675081}
-  - {fileID: 595729353}
   m_Father: {fileID: 1829548014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &142805371
@@ -25727,12 +25727,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595729352}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 142520150}
+  m_Father: {fileID: 820675081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &595729354
 MonoBehaviour:
@@ -25743,9 +25743,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 595729352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ce24474b2e9f48ff89bec14e937baba, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e1e53d88e8cb334fa476a2c90b935a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WebView.WebViewManager
+  webViewImage: {fileID: 340562}
+  pointerEventSource: {fileID: 340561}
+  textureWidth: 1920
+  intervalMSec: 10
+  defaultUrl: https://miro.com/online-whiteboard/
+  normalizedTouchSlop: {x: 0.05, y: 0.05}
+  defaultMipChain: 1
+  defaultFilterMode: 2
+  defaultAnisoLebel: 8
+  urlChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  dataReceived:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &598837605
 GameObject:
   m_ObjectHideFlags: 0
@@ -38039,6 +38054,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 340560}
+  - {fileID: 595729353}
   m_Father: {fileID: 142520150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
