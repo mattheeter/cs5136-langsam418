@@ -5,6 +5,7 @@ public class background_controller : MonoBehaviour
 {
     public GameObject defaultBackground;
     public GameObject[] backgrounds;
+    public GameObject[] affectedObjects;
 
     int index = -1;
 
@@ -36,7 +37,27 @@ public class background_controller : MonoBehaviour
     void updateBackground(int newIndex) {
       int oldIndex = index;
       index = newIndex;
+      Debug.Log(index);
 
+      foreach (GameObject item in affectedObjects)
+      {
+        Rigidbody rb = item.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+          if (index == 1)
+          {
+            rb.useGravity = false;
+            rb.AddForce(Vector3.up * 0.25f, ForceMode.Impulse);
+            rb.linearDamping = 0.25f;
+          }
+          else
+          {
+            rb.linearDamping = 0;
+            rb.useGravity = true;
+          }
+        }
+      }
+      
       if (index != oldIndex) {
         if (oldIndex == -1) {
           defaultBackground.SetActive(false);
