@@ -26,8 +26,7 @@ Our choices to enhance the room were to support further interactivity in the roo
 
 
 The last major choice we made to enhance the room is to enable users to change the surroundings of the room.  The currently supported options are mountain ranges, a Minecraft world, and outside of Saturn’s orbit in space. We felt that doing this would help change the vibes of the room, depending on what is needed for the occasion. The changes that can be made based on the setting can also be creative and really alter the room, such as the zero gravity mode triggered when you change the location to space (pictured below).
-
-
+&nbsp;
 <img width="2550" height="1420" alt="image" src="https://github.com/user-attachments/assets/0ced2318-7b7c-47f0-ab84-e6f5d4a00aa6" />
 
 ## Process
@@ -37,7 +36,7 @@ To make this application, we used Unity’s VR development environment. We utili
 Our production process changed throughout the project. To begin, we would meet as a whole group to brainstorm and discuss the overall path and big-ticket items we wanted to include in our project. We would come up with ideas and then draw them out as storyboards (examples shown below) to document and communicate our ideas and the style we are going for. Even though we aren’t all the best artists, we found this to be a very effective means of communication, which helped us avoid major misunderstandings, especially as we began to work asynchronously. Working asynchronously was very helpful, but came with its own challenges, which will be discussed in the next section. The last important part of our system was the use of PRs to check one another's work and ensure that we are all still on the same page before moving on with changes. This was essential because otherwise we would consistently be overriding one another's work.
 
 <img width="1444" height="1660" alt="image" src="https://github.com/user-attachments/assets/e63ec7c2-1fc2-44b8-8557-7bb9c19e6766" />
-
+&nbsp;
 <img width="1446" height="1571" alt="image" src="https://github.com/user-attachments/assets/ff1de284-b675-4a74-a79e-1a0aefd52d1c" />
 
 ## Challenges
